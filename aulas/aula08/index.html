@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula08</title>
+</head>
+<body>
+<script>
+
+    var n1 = parseFloat(prompt("informe sua primeira nota: "));
+    var n2 = parseFloat(prompt("informe sua segunda nota: "));
+
+    if(n1 === 0 || n2 === 0){ //verificação se zerou alguma nota//
+        alert("infelizmente voce esta reprovado");
+
+    } else  {
+        var med = (n1 + n2) / 2;
+
+        alert(`sua media é de ${med}`);
+
+        alert(med >= 5 ? "voce foi aprovado" : "voce esta reprovado");
+
+    }
+
+    
+</script>    
+</body>
+</html>
