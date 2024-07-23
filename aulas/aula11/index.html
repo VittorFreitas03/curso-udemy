@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 11</title>
+</head>
+<body>
+    
+ <script>
+    let n1 = parseInt(prompt('Jogador 1 | digite um numero: '));
+    let n2 = parseInt(prompt('Jogador 2 | digite um numero: '));
+    
+    let sorteio = parseInt( Math.random( ) * 2 )
+
+    alert(`o valor da variavel sorteio é ${sorteio} `);
+
+    if (n1 === n2){
+        alert('partida empatada');
+
+    }else if (sorteio === 0){
+        alert(n1 >=n2 ? "jogador 2 venceu" : "jogador 1 venceu");
+
+    } else {
+        alert(n1 >= n2 ? "jogador 1 venceu" : "jogador 2 venceu");
+    }
+ </script>   
+</body>
+</html>
