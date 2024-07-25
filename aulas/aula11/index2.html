@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando</title>
+</head>
+<body>
+<script>
+    let n1 = parseFloat(prompt('Informe sua primeira nota: '));
+    let n2 = parseFloat(prompt('Informe sua segunda nota: '));
+
+    if( n1 === 0 || n2 === 0){
+        alert('voce esta reprovado automaticamente');
+    } else {
+        med = (n1 + n2) / 2
+        alert(`sua media é ${med}`)
+
+        if(med >= 5.1){
+            alert('voce esta aprovado')
+        } else if ( med = 5) {
+            alert('voce esta de recuperação')
+        }else{
+            alert('voce esta reprovado')
+        }
+    }
+
+</script>        
+</body>
+</html>

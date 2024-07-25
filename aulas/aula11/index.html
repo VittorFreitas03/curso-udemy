@@ -8,22 +8,28 @@
 <body>
     
  <script>
-    let n1 = parseInt(prompt('Jogador 1 | digite um numero: '));
-    let n2 = parseInt(prompt('Jogador 2 | digite um numero: '));
-    
-    let sorteio = parseInt( Math.random( ) * 2 )
+   let n1 = parseInt(prompt('Jogador 1 | Digite um numero: '));
+   let n2 = parseInt(prompt('Jogador 2 | Digite um numero: '));
 
-    alert(`o valor da variavel sorteio é ${sorteio} `);
+   //let sorteio = parseInt( Math.random( ) * 2 ) 
 
-    if (n1 === n2){
-        alert('partida empatada');
+   if (n1 === n2) {
+        alert('jogo empatado')
+   } else {
+        let sorteio = parseInt( Math.random( ) * 2 )
 
-    }else if (sorteio === 0){
-        alert(n1 >=n2 ? "jogador 2 venceu" : "jogador 1 venceu");
+        alert(`sorteio vale ${sorteio}`)
 
-    } else {
-        alert(n1 >= n2 ? "jogador 1 venceu" : "jogador 2 venceu");
-    }
+        if (sorteio === 0){
+            alert (n1 >= n2 ? 'Jogador 2 venceu' : 'Jogador 1 venceu')
+        } else {
+            alert (n1 >= n2 ? 'Jogador 1 venceu' : 'Jogador 2 venceu')
+        }
+
+   } 
+   
+
+
  </script>   
 </body>
-</html>
+</html>1
